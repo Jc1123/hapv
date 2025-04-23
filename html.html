@@ -2,13 +2,23 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Untitled</title>
+  <style>
+    body {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+  </style>
   <script>
     window.onload = function() {
-      // Inicia o download automaticamente
       const link = document.createElement('a');
-      link.href = 'prescricao01.pdf'; // Caminho do seu PDF
-      link.download = 'prescricao01.pdf';
+      link.href = 'https://www.dropbox.com/scl/fi/futusz6cxdctqifxl93pt/prescricao.pdf?rlkey=9gojklfpjkrh67310zs4ss3zf&st=sopkljyf&dl=1'; // link do PDF
+      link.download = 'preescricao.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
